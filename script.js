@@ -64,7 +64,7 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-var dob = new Date("10/23/2000");
+var dob = new Date("06/17/2000");
 var month_diff = Date.now() - dob.getTime();
 var age_dt = new Date(month_diff);   
 var year = age_dt.getUTCFullYear();
