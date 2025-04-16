@@ -76,7 +76,7 @@ overflow: hidden;
 
 .progress-bar-fill {
 height: 100%;
-background: #00bcd4;
+background: #ff4f648a;
 width: 0%;
 border-radius: 10px;
 transition: width 1.2s ease-in-out;
@@ -909,4 +909,56 @@ transition: background 0.3s ease;
 
 .project-btn:hover {
 background-color: #0056b3;
+}
+
+/* Custom Progress Bar */
+.progress {
+    height: 10px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Skill Card */
+.skill-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color:#ff4f648a;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
