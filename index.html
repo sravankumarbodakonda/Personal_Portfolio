@@ -168,7 +168,7 @@
     <section>
         <div id="about" class="m-4 d-flex justify-content-center align-items-center">
             <div class="mypic mx-4 img-fluid" data-aos="fade-up" data-aos-duration="1000">
-                 <img id="hh" src="/sravan.jpg" alt="" srcset="" />
+                 <img id="hh" src="#" alt="" srcset="" />
                 <!-- <style>
                     #hh {
   width: 100%; /* Makes the image take the full width of its container */
@@ -193,6 +193,20 @@
                             <b>Age : </b>
                             <span id="myAge"></span>
                         </div>
+                        <script>
+                            window.onload = function () {
+                                var dob = new Date("06/17/2000");
+                                var month_diff = Date.now() - dob.getTime();
+                                var age_dt = new Date(month_diff);   
+                                var year = age_dt.getUTCFullYear();
+                                var age = Math.abs(year - 1970);
+                                document.getElementById('myAge').innerHTML = age;
+                            
+                                const presentyear = new Date();
+                                document.getElementById('year').innerHTML = presentyear.getFullYear();
+                            };
+                            </script>
+                            
                     </div>
                     <div class="col-lg-6">
                         <div class="about-desc-info">
@@ -513,6 +527,26 @@
                     <div class="resume-list b-box p-4 ">
                         <div class="row align-items-center">
                             <div class="col-6 col-md-3 pb-3 pb-md-0">
+                                <img class="company-logo" src="https://onecommunityglobal.org/wp-content/uploads/2019/12/HD-Circular-Logo-300x300-1.jpg" alt="" class="mx-auto b-box">
+                            </div>
+                            <div class="col-6 col-md-2 pb-3 pb-md-0">
+                                One Community Organization
+                            </div>
+                            <div class="col-md-4 pb-2 pb-md-0">
+                                <h5 class="mb-3">Software Engineer</h5>
+                                <p>Working as a team member and developing a webiste using Mern Stack
+                                </p>
+                            </div>
+                            <div class="col-md-3 text-md-right">
+                                <h6 class="badge badge-success">March 2025 - Present</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="resume-list b-box p-4 ">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-3 pb-3 pb-md-0">
                                 <img class="company-logo" src="/SHUlogo.jpeg" alt="" class="mx-auto b-box">
                             </div>
                             <div class="col-6 col-md-2 pb-3 pb-md-0">
@@ -524,7 +558,7 @@
                                 </p>
                             </div>
                             <div class="col-md-3 text-md-right">
-                                <h6 class="badge badge-success">January 2024 - Present</h6>
+                                <h6 class="badge badge-success">January 2025 - Present</h6>
                             </div>
                         </div>
                     </div>
