@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- CSS only -->
     <!-- JavaScript Bundle with Popper -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,20 +79,21 @@
                     stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
             </svg></div>
     </div>
-    <div class="banner position-relative text-center py-5 bg-light">
-        <div class="canvas position-absolute w-100 h-100" style="top: 0; left: 0; z-index: 0;">
-            <canvas id="canvas"></canvas>
+    <<div class="banner d-flex align-items-center justify-content-center text-center">
+        <div class="canvas position-absolute w-100 h-100">
+            <canvas id="canvas" class="w-100 h-100"></canvas>
         </div>
-    
-        <div id="mainDiv" class="position-relative" style="z-index: 1;">
+        <div id="mainDiv" class="position-relative z-1">
             <div class="container">
-                <h3 class="mb-3">Hello,</h3>
-                <p class="fs-4">
-                    I'm <span class="typed-text fw-bold text-primary"></span><span class="cursor">&nbsp;</span>
+                <h3 class="text-light">Hello,</h3>
+                <p class="text-light fs-1 fw-bold lh-sm">
+                    I'm <span class="typed-text text-warning"></span><span class="cursor">&nbsp;</span>
                 </p>
+                
             </div>
         </div>
     </div>
+    
     
     <section id="about" class="py-5 bg-light">
         <div class="container">
